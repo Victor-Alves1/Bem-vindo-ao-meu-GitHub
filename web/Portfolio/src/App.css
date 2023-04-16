@@ -1,0 +1,150 @@
+#root {
+  max-width: 1280px;
+  margin: auto auto;
+  padding: 0;
+  text-align: center;
+}
+.App{
+  display: flex;
+  height: 100vh;
+  width:1000px;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.logo-pessoal{
+  width: 200px;
+}
+.logo {
+  height: 3em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  transition: 0.2s;
+  filter: drop-shadow(0 0 5px white);
+}
+.prestigio {
+  position: relative; 
+
+}
+.palmas-prestigio{
+  height: 60px;
+  position: absolute;
+}
+.palmas-1{
+  left:60%;
+  display: none;
+}
+.palmas-2{
+  left:55%;
+  display: none;
+}
+.prestigio-1{
+  transform: rotateX(0deg)translateX(-50%);
+  position: absolute;
+  width: 120px;
+  height:60px;
+  transition: 0.5s;
+  transform-origin: top;
+}
+.prestigio:hover .prestigio-1{
+  transform: rotateX(-90deg)translateX(-50%);
+}
+.prestigio-2{
+  transform: rotateX(90deg)translateX(-50%);
+  position: absolute;
+  width: 120px;
+  height:60px;
+  transition: 0.5s;
+  transform-origin: bottom;
+}
+.prestigio:hover .prestigio-2{
+  transform: rotateX(0deg)translateX(-50%);
+}
+.typing{
+  position: absolute;
+  text-align: left;
+  z-index: -1;
+  top: 0;
+}
+.typing span{
+  animation: blink 1s infinite;
+}
+.types{
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0.6;
+  width: 30em;
+}
+.typing1{
+  animation: types1 5s linear;
+}
+.typing2{
+  animation: types2 8s steps(60, end);
+}
+.typing3{
+  animation: types3 12s steps(60, end);
+}
+.typing4{
+  animation: types4 16s steps(60, end);
+}
+.typing5{
+  animation: types5 20s steps(60, end);
+}
+.typing6{
+  animation: types6 22s steps(60, end);
+}
+.typing7{
+  animation: types7 24s steps(60, end);
+}
+.typing8{
+  animation: types8 26s steps(60, end);
+}
+
+@keyframes types{
+  0%{top: 0}
+  100%{top:-50%;}
+}
+@keyframes blink{
+  to{opacity: 0;}
+}
+@keyframes types1{
+  from{width: 0;}
+}
+@keyframes types2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+}
+@keyframes types3{
+  0%{width: 0;}
+  66%{width: 0;}
+  100%{ width: 100; } 
+}
+@keyframes types4{
+  0%{width: 0;}
+  75%{width: 0;}
+  100%{ width: 100; } 
+}
+@keyframes types5{
+  0%{width: 0;}
+  78%{width: 0;}
+  100%{ width: 100; } 
+}
+@keyframes types6{
+  0%{width: 0;}
+  80%{width: 0;}
+  100%{ width: 100; } 
+}
+@keyframes types7{
+  0%{width: 0;}
+  82%{width: 0;}
+  100%{ width: 100; } 
+}
+@keyframes types8{
+  0%{width: 0;}
+  85%{width: 0;}
+  100%{ width: 100; } 
+}
