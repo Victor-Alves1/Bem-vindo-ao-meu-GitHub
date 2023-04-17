@@ -3,31 +3,65 @@
   margin: auto auto;
   padding: 0;
   text-align: center;
+  color: #666666;
 }
 .App{
+  width:900px;
+  margin: auto;
+}
+.pessoal{
   display: flex;
-  height: 100vh;
-  width:1000px;
-  flex-direction: column;
-  justify-content: center;
-
+  justify-content: space-between;
+}
+.surgir{
+  animation: surgir 6s linear;
 }
 .logo-pessoal{
   width: 200px;
 }
+.informacoes-pessoal{
+  text-align: left;
+}
+.informacoes-pessoal h1, .informacoes-pessoal p{
+  margin-top: 0;
+  margin-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.informacoes-pessoal h1{
+  width: 24ch;
+  animation: types1 3s steps(24, end);
+  }
+.informacoes-pessoal p{
+  width: 75ch;
+  animation: types2 5s steps(71, end);
+}
+.typing{
+  animation: blink 1s infinite;
+}
+.stack{
+  margin: 4px 0px
+}
+.stack img{
+  position: relative;
+  top: 15px;
+}
+.icones-pessoais{
+  margin: auto;
+}
 .logo {
-  height: 3em;
-  padding: 1.5em;
+  height: 48px;
+  padding-right: 10px;
+  transform: translateY(40%);
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
   transition: 0.2s;
-  filter: drop-shadow(0 0 5px white);
+  filter: drop-shadow(0 0 5px blue);
 }
 .prestigio {
   position: relative; 
-
 }
 .palmas-prestigio{
   height: 60px;
@@ -41,71 +75,42 @@
   left:55%;
   display: none;
 }
-.prestigio-1{
-  transform: rotateX(0deg)translateX(-50%);
+.prestigio-1, .prestigio-2{
   position: absolute;
+  color: black;
   width: 120px;
   height:60px;
-  transition: 0.5s;
-  transform-origin: top;
+  transition: 0.3s;
+  background-color: lightgrey;
+  border-radius: 5px;
+  border:none;
 }
-.prestigio:hover .prestigio-1{
-  transform: rotateX(-90deg)translateX(-50%);
+.prestigio-1{
+  transform: rotateX(0deg)translateX(-50%);
+  transform-origin: bottom;
 }
 .prestigio-2{
   transform: rotateX(90deg)translateX(-50%);
   position: absolute;
-  width: 120px;
-  height:60px;
-  transition: 0.5s;
-  transform-origin: bottom;
+  z-index: 1;
+  transform-origin: top;
+}
+.prestigio:hover .prestigio-1{
+  transform: rotateX(90deg)translateX(-50%);
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
 }
 .prestigio:hover .prestigio-2{
   transform: rotateX(0deg)translateX(-50%);
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
 }
-.typing{
-  position: absolute;
-  text-align: left;
-  z-index: -1;
-  top: 0;
-}
-.typing span{
-  animation: blink 1s infinite;
-}
-.types{
-  white-space: nowrap;
-  overflow: hidden;
-  opacity: 0.6;
-  width: 30em;
-}
-.typing1{
-  animation: types1 5s linear;
-}
-.typing2{
-  animation: types2 8s steps(60, end);
-}
-.typing3{
-  animation: types3 12s steps(60, end);
-}
-.typing4{
-  animation: types4 16s steps(60, end);
-}
-.typing5{
-  animation: types5 20s steps(60, end);
-}
-.typing6{
-  animation: types6 22s steps(60, end);
-}
-.typing7{
-  animation: types7 24s steps(60, end);
-}
-.typing8{
-  animation: types8 26s steps(60, end);
-}
-
-@keyframes types{
-  0%{top: 0}
-  100%{top:-50%;}
+@keyframes surgir{
+  0%{opacity: 0}
+  95%{opacity: 0}
+  100%{opacity:100%}
 }
 @keyframes blink{
   to{opacity: 0;}
@@ -115,36 +120,6 @@
 }
 @keyframes types2{
   0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-}
-@keyframes types3{
-  0%{width: 0;}
-  66%{width: 0;}
-  100%{ width: 100; } 
-}
-@keyframes types4{
-  0%{width: 0;}
-  75%{width: 0;}
-  100%{ width: 100; } 
-}
-@keyframes types5{
-  0%{width: 0;}
-  78%{width: 0;}
-  100%{ width: 100; } 
-}
-@keyframes types6{
-  0%{width: 0;}
-  80%{width: 0;}
-  100%{ width: 100; } 
-}
-@keyframes types7{
-  0%{width: 0;}
-  82%{width: 0;}
-  100%{ width: 100; } 
-}
-@keyframes types8{
-  0%{width: 0;}
-  85%{width: 0;}
+  60%{width: 0;}
   100%{ width: 100; } 
 }

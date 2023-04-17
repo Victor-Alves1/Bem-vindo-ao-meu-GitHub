@@ -5,37 +5,44 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className="App centralizado">
       <div>
-        <div className='typing'>
-          <p className='types typing1'>$ sudo apt install git</p>
-          <p className='types typing2'>$ git config --global user.name VictorAlves</p>
-          <p className='types typing3'>$ git config --global user.email victoralves741@gmail.com</p>
-          <p className='types typing4'>$ git config --global core.editor nano</p>
-          <p className='types typing5'>$ cd /home/portfolio</p>
-          <p className='types typing6'>$ git init</p>
-          <p className='types typing7'>$ git add .</p>
-          <p className='types typing8'>$ git commit -m"Fist commit"<span>|</span></p> 
+
+        <div className='pessoal'>
+          <div className='informacoes-pessoal'>
+            <h1>Desenvolvedor Full-stack</h1>
+            <p>Olá, eu sou o Victor. Desenvolvedor Python(Django) e Javascript(React)<span className='typing'>|</span></p>
+            <div className='stack surgir'>
+              Stack:  <img src="/stack/icons8-html-5.svg" alt="icone html" />
+                      <img src="/stack/icons8-css3.svg" alt="icone css" />
+                      <img src="/stack/icons8-javascript.svg" alt="icone javascript" />
+                      <img src="/stack/icons8-reagir.svg" alt="icone react" />
+                      <img src="/stack/icons8-python.svg" alt="icone python" />
+                      <img src="/stack/icons8-tailwindcss.svg" alt="icone tailwindcss" />
+            </div>
+            <div className='icones-pessoais surgir'>
+              Contato:
+              <a href="https://www.linkedin.com/in/victor-alvc
+      " target='_blank'><img src="/contato/linkedin.svg" alt="Icone do linkedin" className='logo' /></a>
+              <a href="https://github.com/Victor-Alves1" target='_blank'><img src="/contato/github.svg" alt="Icone do github" className='logo' /></a>
+              <a href="https://medium.com/@victoralves741" target='_blank'><img src="/contato/medium.svg" alt="Icone do medium" className='logo' /></a>
+              <a href="#"><img src="/contato/email.svg" alt="Icone do email" className='logo' /></a>
+            </div>
+
+          </div>
+          <div className='foto-pessoal surgir'>
+            <img className='logo-pessoal' src="/eu.jpg" alt="" /> 
+          </div>
         </div>
-
-        <img className='logo-pessoal' src="/eu.png" alt="" />
-        <h1>Victor Alves da Costa</h1>
-        <p>Desenvolvedor Full-stack Javascript e Python</p>
-        <p>Graduando em Engenharia de Software</p>
-
-        {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
+        </div>
         
-        <a href="https://www.linkedin.com/in/victor-alvc
-" target='_blank'><img src="/linkedin.svg" alt="Icone do linkedin" className='logo' /></a>
-        <a href="https://github.com/Victor-Alves1" target='_blank'><img src="/github.svg" alt="Icone do github" className='logo' /></a>
-        <a href="https://medium.com/@victoralves741" target='_blank'><img src="/medium.svg" alt="Icone do medium" className='logo' /></a>
-        <a href="#"><img src="/email.svg" alt="Icone do email" className='logo' /></a>
-      </div>
+        
+        
 
-      <div className="card">
+      <div className="card surgir">
         
         <div className='prestigio' onClick={() => setCount((count) => count + 1)}>
-          <img className='palmas-prestigio palmas-1' src="/palmas.gif" alt="" />
+          <img className='palmas-prestigio palmas-1' src="/palmas.gif" alt="animação de palmas" />
           <button className='prestigio-1'>
             <img src="/prestigio.svg" alt="Icone de prestigio" />
             {count}

@@ -1,12 +1,16 @@
-.header{
-    position: absolute;
+.navbar{
+    position: fixed;
     left:50%;
     transform: translateX(-50%);
-    bottom: 4%;
+    background: lightgrey;
+    width: 100vw;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
 }
-.navbar span{
+.navbar div{
     padding:20px;
-    margin: 5px 10px;
-    border: 2px solid white;
     cursor: pointer;
 }

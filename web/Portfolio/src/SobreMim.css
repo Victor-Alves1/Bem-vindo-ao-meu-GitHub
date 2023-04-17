@@ -1,0 +1,33 @@
+.container-eu{
+    text-align: left;
+    position: relative;
+
+}
+.trajetoria{
+    border-left: 2px solid black;
+    padding-left:15px;
+}
+.trajetoria h2{
+    margin-top:0;
+}
+.container-eu h2::before{
+    content: '';
+    background-color: black;
+    width: 0.8rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+.container-eu h3::before{
+    content: '';
+    border: 2px solid black;
+    background-color: black;
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    position: absolute;
+    left: 0px;
+    transform: translate(-50%, 25%);
+    border-radius: 50%;
+}

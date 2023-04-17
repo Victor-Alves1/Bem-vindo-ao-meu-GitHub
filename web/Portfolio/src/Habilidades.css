@@ -1,0 +1,18 @@
+.container-habilidades{
+}
+.quadro-habilidades{
+    display: flex;
+    justify-content: space-evenly;
+}
+.quadro-habilidades div{
+    width: 200px;
+    margin: 10px;
+
+}
+.list{
+    List-style: none;
+    padding: 0;
+}
+.destaque{
+    font-style: italic;
+}

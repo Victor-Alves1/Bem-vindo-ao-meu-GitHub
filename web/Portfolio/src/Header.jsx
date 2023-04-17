@@ -16,10 +16,10 @@ function Header(){
     return (
     <div className='header'>
         <div className='navbar'>
-            <span onClick={()=>scrollToPage('home')}>Home</span>
-            <span onClick={()=>scrollToPage('habilidades')}>Habilidades e experiências</span>
-            <span onClick={()=>scrollToPage('projetos')}>Projetos</span>
-            <span onClick={()=>scrollToPage('eu')}>Quem sou eu</span>
+            <div onClick={()=>scrollToPage('home')}>Home</div>
+            <div onClick={()=>scrollToPage('habilidades')}>Habilidades e experiências</div>
+            <div onClick={()=>scrollToPage('projetos')}>Projetos</div>
+            <div onClick={()=>scrollToPage('eu')}>Quem sou eu</div>
         </div>
     </div>
    )
