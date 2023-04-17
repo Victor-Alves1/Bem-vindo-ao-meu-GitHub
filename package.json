@@ -2,7 +2,8 @@
   "homepage": "http://{username}.github.io/{repo-name}",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build":"react-scripts build"
     },
   "devDependencies": {
     "gh-pages": "^5.0.0"
