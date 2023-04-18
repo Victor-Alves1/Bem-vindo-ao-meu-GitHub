@@ -1,8 +1,11 @@
-
+.projetos-flexgrid{
+    display: flex;
+    margin: 0px auto;
+}
 .container-projetos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px
+    width: 700px;
 }
 .container-projetos p img{
     width: 20px;
@@ -32,4 +35,11 @@
     grid-row-start: 4;
     grid-row-end: 5;
     font-weight: bold;
+}
+@media (max-width: 1340px)
+{
+    .projetos-flexgrid{
+        display: flex;
+        flex-direction: column;
+    }
 }

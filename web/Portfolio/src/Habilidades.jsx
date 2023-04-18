@@ -5,7 +5,7 @@ function Habilidades(){
     <div className='container-habilidades centralizado'>
         <h1>Minhas habilidades</h1>
         <div className='quadro-habilidades'>
-            <div>
+            <div className='container-listas'>
                 <h2>Front End</h2>
                 <ul className='list'>
                     <li>HTML</li>
@@ -16,7 +16,7 @@ function Habilidades(){
                     <li>Bootstrap</li>
                 </ul>
             </div>
-            <div>
+            <div className='container-listas'>
                 <h2>Back End</h2>
                 <ul className='list'>
                     <li>Python(Django)</li>
@@ -27,7 +27,7 @@ function Habilidades(){
                     <li>GraphQL/GraphCMS</li>
                 </ul>
             </div>
-            <div>
+            <div className='container-listas'>
                 <h2>Outros</h2>
                 <ul className='list'>
                     <li>Git</li>
@@ -41,7 +41,7 @@ function Habilidades(){
                 </ul>
             </div> 
         </div>
-        <div>
+        <div className='container-listas container-certicacao'>
                 <h2>Certificações</h2>
                 <ul className='list'>
                     <li><a href="https://www.hackerrank.com/certificates/5d9d1185fc23" target='_blank'>JavaScript - HackerRank*</a> </li>

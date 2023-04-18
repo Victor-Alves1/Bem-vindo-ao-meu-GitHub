@@ -47,8 +47,6 @@ function App() {
             <img src="/prestigio.svg" alt="Icone de prestigio" />
             {count}
           </button>
-          <button className='prestigio-2'>Clique aqui!</button>
-          <img className='palmas-prestigio palmas-2' src="/palmas.gif" alt="" />
         </div>
       </div>
     </div>

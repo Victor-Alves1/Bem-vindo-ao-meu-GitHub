@@ -1,6 +1,4 @@
 #root {
-  max-width: 1280px;
-  margin: auto auto;
   padding: 0;
   text-align: center;
   color: #666666;
@@ -56,9 +54,9 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  transition: 0.2s;
-  filter: drop-shadow(0 0 5px blue);
+.logo:hover, .prestigio:hover {
+  transition: 0.4s;
+  filter: drop-shadow(0 0 5px grey);
 }
 .prestigio {
   position: relative; 
@@ -66,14 +64,6 @@
 .palmas-prestigio{
   height: 60px;
   position: absolute;
-}
-.palmas-1{
-  left:60%;
-  display: none;
-}
-.palmas-2{
-  left:55%;
-  display: none;
 }
 .prestigio-1, .prestigio-2{
   position: absolute;
@@ -88,24 +78,6 @@
 .prestigio-1{
   transform: rotateX(0deg)translateX(-50%);
   transform-origin: bottom;
-}
-.prestigio-2{
-  transform: rotateX(90deg)translateX(-50%);
-  position: absolute;
-  z-index: 1;
-  transform-origin: top;
-}
-.prestigio:hover .prestigio-1{
-  transform: rotateX(90deg)translateX(-50%);
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-  7px 7px 20px 0px rgba(0,0,0,.1),
-  4px 4px 5px 0px rgba(0,0,0,.1);
-}
-.prestigio:hover .prestigio-2{
-  transform: rotateX(0deg)translateX(-50%);
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-  7px 7px 20px 0px rgba(0,0,0,.1),
-  4px 4px 5px 0px rgba(0,0,0,.1);
 }
 @keyframes surgir{
   0%{opacity: 0}

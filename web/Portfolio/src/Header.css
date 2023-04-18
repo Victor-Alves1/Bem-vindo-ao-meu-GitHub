@@ -4,13 +4,19 @@
     transform: translateX(-50%);
     background: lightgrey;
     width: 100vw;
-    height: 40px;
+    height: 50px;
     align-items: center;
     justify-content: center;
+    gap: 5vw;
     display: flex;
     z-index: 1;
 }
 .navbar div{
-    padding:20px;
     cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+}
+.navbar div:hover{
+    transition: 0.2s;
+    color: white;
 }

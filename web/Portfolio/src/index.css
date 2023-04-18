@@ -68,14 +68,14 @@ button:focus-visible {
 }
 
 #home, #habilidades, #projetos, #eu{
-  height: 100vh;
+  min-height: 1100px;
   magin: 0;
   padding: 0;
 }
-
 .centralizado{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
