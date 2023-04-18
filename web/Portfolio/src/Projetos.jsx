@@ -12,7 +12,7 @@ function Projetos(){
                 </video>
                 <p className='grid-c1 grid-l3'>Projeto é 100% autoral, decidi criar algo que tivesse conexão comigo. Escolhi o jogo League of Legends por ser um game que joguei durante anos.
                 <br />
-                O projeto foi feito consumindo a API oficial do jogo.<a href="https://github.com/Victor-Alves1/League-of-Legends-Clone">Código no Github.</a></p>
+                O projeto foi feito consumindo a API oficial do jogo.<a href="https://github.com/Victor-Alves1/League-of-Legends-Clone">Código no Github.</a> <a href="https://league-of-legends-clone.vercel.app/home">Clique aqui para acessar o projeto.</a></p>
                 <p className='grid-c1 grid-l4'>Tecnologias utilizadas:<img src="/stack/icons8-html-5.svg" alt="icone html" /> HTML
                             <img src="/stack/icons8-css3.svg" alt="icone css" /> CSS 
                             <img src="/stack/icons8-javascript.svg" alt="icone javascript" />JavaScript 
@@ -26,7 +26,7 @@ function Projetos(){
                 </video>
                 <p className='grid-c1 grid-l3'>Um plataforma de cursos contruida durante o evento "Ignite Lab". A proposta era reunir  Devs e montar uma aplicação completa com ferramentas modernas. 
                 <br />
-                <a href="https://github.com/Victor-Alves1/Ignite-Lab">Código no Github.</a>
+                <a href="https://github.com/Victor-Alves1/Ignite-Lab">Código no Github.</a><a href="https://ignite-lab-three-pi.vercel.app/">Clique aqui para acessar o projeto.</a>
                 </p>
                 <p className='grid-c1 grid-l4'>Tecnologias utilizadas:<img src="/stack/icons8-html-5.svg" alt="icone html" /> HTML
                             <img src="/stack/icons8-css3.svg" alt="icone css" /> CSS 
