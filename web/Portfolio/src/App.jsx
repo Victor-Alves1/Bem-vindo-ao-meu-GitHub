@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App centralizado">
+    <div  id='home'className="App centralizado">
       <div>
 
         <div className='pessoal'>

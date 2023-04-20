@@ -2,7 +2,7 @@ import './Projetos.css'
 
 function Projetos(){
     return (
-    <div className='centralizado'>
+    <div id='projetos' className='centralizado'>
         <h1>Projetos</h1>
         <div className='projetos-flexgrid'>
             <div className='container-projetos'>

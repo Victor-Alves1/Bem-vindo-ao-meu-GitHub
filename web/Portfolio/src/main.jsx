@@ -10,18 +10,18 @@ import SobreMim from './SobreMim'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
-    <div id='home'>
+    <div >
 
-      <App />
+      <App id='section1'/>
     </div>
-    <div id='habilidades' >
-      <Habilidades />
+    <div>
+      <Habilidades id='section2'/>
     </div>
-    <div id='projetos'>
-      <Projetos />
+    <div >
+      <Projetos id='section3'/>
     </div>
-    <div id='eu'>
-      <SobreMim />
+    <div>
+      <SobreMim id='section4'/>
     </div>
     creditos: icones por <a target="_blank" href="https://icons8.com">Icons8</a> e <a href="https://phosphoricons.com/">PhosphorIcons</a>
 

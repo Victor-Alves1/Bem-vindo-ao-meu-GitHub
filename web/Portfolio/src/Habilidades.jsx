@@ -2,7 +2,7 @@ import './Habilidades.css'
 
 function Habilidades(){
     return (
-    <div className='container-habilidades centralizado'>
+    <div id='habilidades' className='container-habilidades centralizado'>
         <h1>Minhas habilidades</h1>
         <div className='quadro-habilidades'>
             <div className='container-listas'>
@@ -30,13 +30,13 @@ function Habilidades(){
             <div className='container-listas'>
                 <h2>Outros</h2>
                 <ul className='list'>
-                    <li>Git</li>
-                    <li>GitHub</li>
+                    <li>Git/GitHub</li>
                     <li>TypeScript</li>
                     <li>Cloud</li>
                     <li>Scrum</li>
                     <li>Figma</li>
                     <li>Photoshop</li>
+                    <li></li>
 
                 </ul>
             </div> 

@@ -1,14 +1,8 @@
 import './Header.css'
 
 function scrollToPage(local){
-    console.log(local)
     let scrollingTo = window.document.getElementById(local)
-    console.log(scrollingTo)
-    scrollingTo.scrollIntoView({
-        block: 'start',
-        behavior: 'smooth',
-        inline: 'start'
-      })
+    scrollingTo.scrollIntoView(true)
 
 }
 
